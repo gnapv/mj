@@ -1,0 +1,57 @@
+
+{# Associate lib JS and CSS to this template #}
+{{ attach_library('gmlifetheme/my-library') }}
+
+{%
+  set classes = [
+    'paragraph', 
+    'swiper-container type-swiper-background',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+
+{% set delay = paragraph.field_autoplay_delay.value|render|trim %}
+{% set speed = paragraph.field_transition_speed.value|render|trim %}
+{# Add atributes to grab on JS #}
+
+{% set attributes = attributes.addClass(classes) %}
+{% if delay %}
+    {% set attributes = attributes.setAttribute('data-delay', delay) %}
+{% endif %}
+{% if speed %}
+    {% set attributes = attributes.setAttribute('data-speed', speed) %}
+{% endif %}
+
+
+
+{% block paragraph %}
+ <!-- Slider main container -->
+  <div{{ attributes}} style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -100;">
+    {% block content %}
+
+   
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+             {{ content|without('field_autoplay_delay','field_transition_speed') }}
+        {# <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div> #}
+    </div>
+    <!-- If we need pagination -->
+    {# <div class="swiper-pagination"></div> #}
+
+    <!-- If we need navigation buttons -->
+    {# <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> #}
+
+    <!-- If we need scrollbar -->
+    {# <div class="swiper-scrollbar"></div> #}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

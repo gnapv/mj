@@ -1,0 +1,26 @@
+
+{# Content for Lists #}
+
+
+
+{# {% set li_classes = content.field_extra_classes_item.value|render|trim %} #}
+
+
+
+{% for item in items %}
+    {# {% set li_classes = item.content.field_extra_classes_item.value|render|trim %} #}
+    {# {% set li_classes = element['#items'][key].field_extra_classes_item.value|render|trim %} #}
+
+    {# {% set li_classes = item.entity.field_extra_classes_item.value|render|trim %} #}
+
+    {# {% set paragraph_parent = item.content.getParentEntity() %}
+    {% set li_classes = paragraph_parent.field_extra_classes_item.value|render|trim %} #}
+
+    <li class="{{ li_classes }}">
+        {{ item.content }}
+    </li>
+{% endfor %}
+
+
+
+  

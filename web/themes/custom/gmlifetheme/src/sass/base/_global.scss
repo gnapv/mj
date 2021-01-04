@@ -1,0 +1,44 @@
+/*
+ *  GLOBAL
+ *  Default settings
+ *
+ */
+
+*,*:before,*:after {
+	box-sizing: border-box;
+	-webkit-touch-callout:none;
+	user-select:none;
+	-webkit-user-drag:none;
+	outline:0!important
+}
+
+html{
+	// font-size:62.5%;
+	text-rendering:optimizeLegibility!important;
+	-webkit-font-smoothing:antialiased!important;
+    -webkit-text-size-adjust:100%;
+    -moz-osx-font-smoothing: grayscale;
+
+    // @media screen and (min-width: 0) {
+    //     font-size:57.5%;
+    // }
+    // @media screen and (min-width: $screen-sm) {
+    //     font-size:58.5%;
+    // }
+    // @media screen and (min-width: $screen-md) {
+    //     font-size:60.5%;
+    // }
+    // @media screen and (min-width: $screen-lg) {
+    //     font-size:62.5%;
+    // }
+    // @media screen and (min-width: $screen-xxl) {
+    //     font-size:70%;
+    // }
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif;
+}

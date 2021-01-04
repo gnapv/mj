@@ -1,0 +1,43 @@
+
+
+{% for key, item in items %}
+
+    {# grab id from parent paragraph #}
+    {% set paragraph_id = 'accordion-' ~ item.content['#paragraph'].parent_id.value %}
+    {% set final_classes_bt = item.content['#paragraph'].field_extra_classes.value|render|trim %}
+    {% set final_classes_col = item.content['#paragraph'].field_accordion_body.entity.field_extra_classes.value|render|trim %}
+            {# {{ kint(item.content) }} #}
+
+
+        <div class="card">
+          <div class="card-header bg-white shadow-sm border-0" id="heading-{{ paragraph_id }}-{{ key + 1 }}">
+            <h5 class="mb-0">
+              <a class="{{ final_classes_bt }}"  data-toggle="collapse" data-target="#collapse-{{ paragraph_id }}-{{ key + 1 }}" aria-expanded="true" aria-controls="#collapse-{{ paragraph_id }}-{{ key + 1 }}">
+                {# {{ item.content['#paragraph'].field_text_header.value|striptags }}         #}
+                {{ item.content['#paragraph'].field_text_header.value|raw }}        
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapse-{{ paragraph_id }}-{{ key + 1 }}" class="collapse show" aria-labelledby="heading-{{ paragraph_id }}-{{ key + 1 }}" data-parent="#heading-{{ paragraph_id }}-{{ key + 1 }}">
+            <div class="card-body {{ final_classes_col }}">
+            {# {{ kint(item.content['#paragraph'].field_accordion_body[0].entity) }} #}
+
+                 {% for body_key, body_item in item.content['#paragraph'].field_accordion_body %}
+                        {# <p>{{ body_item.entity.field_extra_classes.value|render|trim  }}</p> #}
+
+                    {% for mykey, itemadd in item.content['#paragraph'].field_accordion_body[body_key].entity.field_add_content if key|first != '#' %}
+                        {# {{ itemadd.entity.field_text_formated.value|raw}} #}
+                        <p class="{{ itemadd.entity.field_extra_classes.value|render|trim }}">{{ itemadd.entity.field_text_formated.value|striptags }}</p>
+
+                    {% endfor %}
+                
+                 {% endfor %}
+
+            </div>
+          </div>
+        </div>
+
+{% endfor %}
+
+  

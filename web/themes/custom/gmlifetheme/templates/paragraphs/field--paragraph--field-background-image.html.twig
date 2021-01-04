@@ -1,0 +1,13 @@
+
+{# Content for swipper #}
+{% for item in items %}
+
+    {% set image_url = file_url(item.content['#media'].field_media_image.entity.uri.value) %}
+
+    <div class="swiper-slide">
+    {# {{ item.content }} #}
+    <img src="{{ image_url }}"  alt="background image" class="img-cover">
+    </div>
+{% endfor %}
+
+  

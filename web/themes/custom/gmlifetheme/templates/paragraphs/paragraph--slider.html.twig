@@ -1,0 +1,101 @@
+
+{# Associate lib JS and CSS to this template #}
+{{ attach_library('gmlifetheme/slider-swiper') }}
+
+{%
+  set classes = [
+     paragraph.field_extra_classes.value|render|trim,
+    'paragraph', 
+    'swiper-container type-swiper-slider',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+
+{# Set vars to mount the slider #}
+
+{% set delay = paragraph.field_autoplay_delay.value|render|trim %}
+{% set breakpoints = paragraph.field_breakpoints.value|render|trim %}
+{% set direction = paragraph.field_direction.value|render|trim %}
+{% set effect = paragraph.field_effect.value|render|trim %}
+{% set loop = paragraph.field_loop.value|render|trim %}
+{% set navigation = paragraph.field_navigation.value|render|trim %}
+{% set pagination = paragraph.field_pagination.value|render|trim %}
+{% set slides_per_group = paragraph.field_slides_per_group.value|render|trim %}
+{% set slides_per_view = paragraph.field_slides_per_view.value|render|trim %}
+{% set space_between = paragraph.field_space_between.value|render|trim %}
+{% set speed = paragraph.field_transition_speed.value|render|trim %}
+{# Add atributes to grab on JS #}
+
+{% set attributes = attributes.addClass(classes) %}
+{% if delay %}
+    {% set attributes = attributes.setAttribute('data-delay', delay) %}
+{% endif %}
+{% if breakpoints %}
+    {% set attributes = attributes.setAttribute('data-breakpoints', breakpoints) %}
+{% endif %}
+{% if direction %}
+    {% set attributes = attributes.setAttribute('data-direction', direction) %}
+{% endif %}
+{% if effect %}
+    {% set attributes = attributes.setAttribute('data-effect', effect) %}
+{% endif %}
+{% if loop %}
+    {% set attributes = attributes.setAttribute('data-loop', loop) %}
+{% endif %}
+{% if navigation %}
+    {% set attributes = attributes.setAttribute('data-navigation', navigation) %}
+{% endif %}
+{% if pagination %}
+    {% set attributes = attributes.setAttribute('data-pagination', pagination) %}
+{% endif %}
+{% if slides_per_group %}
+    {% set attributes = attributes.setAttribute('data-slides-per-group', slides_per_group) %}
+{% endif %}
+{% if slides_per_view %}
+    {% set attributes = attributes.setAttribute('data-slides-per-view', slides_per_view) %}
+{% endif %}
+{% if space_between %}
+    {% set attributes = attributes.setAttribute('data-space-between', space_between) %}
+{% endif %}
+{% if speed %}
+    {% set attributes = attributes.setAttribute('data-speed', speed) %}
+{% endif %}
+
+
+{# Resolver o problema do QUICKEDIT a mao.. - adicionar o atributo a mão - data-quickedit-entity-id #}
+{% set attributes = attributes.setAttribute('data-quickedit-entity-id', 'paragraphs_library_item/5') %}
+
+
+
+{% block paragraph %}
+ <!-- Slider main container -->
+  <div {{ attributes}} >
+    {% block content %}
+
+   
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{ content.field_add_columns }} 
+        {# <div class="swiper-slide">Slide 1</div> #}
+    </div>
+    <!-- If we need pagination -->
+    {% if pagination %}
+      <div class="swiper-pagination"></div>
+    {% endif %}
+
+    <!-- If we need navigation Arrows -->
+    {% if navigation %}
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    {% endif %}
+
+    <!-- If we need scrollbar -->
+    {# <div class="swiper-scrollbar"></div> #}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

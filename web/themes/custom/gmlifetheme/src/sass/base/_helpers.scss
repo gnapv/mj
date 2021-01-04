@@ -1,0 +1,132 @@
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.vh-10 { height: 10vh !important; }
+.vh-20 { height: 20vh !important; }
+.vh-30 { height: 30vh !important; }
+.vh-40 { height: 40vh !important; }
+.vh-50 { height: 50vh !important; }
+.vh-60 { height: 60vh !important; }
+.vh-70 { height: 70vh !important; }
+.vh-80 { height: 80vh !important; }
+.vh-90 { height: 90vh !important; }
+
+.h-px-100 { height: 100px !important; }
+.h-px-150 { height: 150px !important; }
+.h-px-200 { height: 200px !important; }
+.h-px-250 { height: 250px !important; }
+.h-px-300 { height: 300px !important; }
+.h-px-350 { height: 350px !important; }
+.h-px-400 { height: 400px !important; }
+.h-px-450 { height: 450px !important; }
+.h-px-500 { height: 500px !important; }
+.h-px-550 { height: 550px !important; }
+.h-px-600 { height: 600px !important; }
+.h-px-650 { height: 650px !important; }
+.h-px-700 { height: 700px !important; }
+.h-px-750 { height: 750px !important; }
+.h-px-800 { height: 800px !important; }
+.h-px-850 { height: 850px !important; }
+.h-px-900 { height: 900px !important; }
+.h-px-950 { height: 950px !important; }
+.h-px-1000 { height: 1000px !important; }
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+      color: #fff!important;
+  }
+
+  .swiper-pagination-bullet-active {
+      background: #fff!important;
+  }
+
+  .swiper-pagination-bullet {
+      width: 15px!important;
+      height: 15px!important;
+  }
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* Horizontal line */
+.collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background:$primary;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  /* Vertical line */
+  .collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: $primary;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+  }
+  
+  .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+  }
+  
+  .collapsible-link {
+    border:0px solid $primary;
+     p {
+      margin: 0;
+    }
+  }

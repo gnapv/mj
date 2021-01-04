@@ -1,0 +1,24 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/gmlifetheme.style.css: {}
+  js:
+    assets/js/gmlifetheme.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+my-library:
+  css:
+      theme:
+        assets/css/swiper-bundle.min.css: {}
+  js:
+      assets/js/swiper-bundle.min.js: {}
+      assets/js/initswiper.js: {}
+slider-swiper:
+  css:
+      theme:
+        assets/css/swiper-bundle.min.css: {}
+  js:
+      assets/js/swiper-bundle.min.js: {}
+      assets/js/initsliderswiper.js: {}

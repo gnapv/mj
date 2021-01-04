@@ -1,0 +1,5 @@
+# Schema for the configuration files of the gmlifetheme theme.
+
+gmlifetheme.settings:
+  type: theme_settings
+  label: 'gmlifetheme settings'

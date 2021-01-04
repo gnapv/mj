@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% set final_classes = paragraph.field_extra_classes.value|render|trim %}
+{% set li_classes = paragraph.field_extra_classes_item.value|render|trim %}
+{% set list_type = paragraph.field_list_type.value|render|trim %}
+
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    {% if list_type == 'UL' %}
+      <ul class="{{ final_classes }}">
+        {# Find the content column 2nd - level paragraph #}
+        {% set cols = content.field_add_columns %}
+        {# Loop on all Items and print classes and content #}
+          {% for key, item in cols['#items'] %}
+                <li class="{{ li_classes }}">
+                  {{ cols[key] }}
+              </li>
+          {% endfor %}
+
+      </ul>
+    {% elseif list_type == 'OL' %}
+      <ol class="{{ final_classes }}">
+        {{ content|without('field_extra_classes', 'field_list_type') }}
+      </ol>
+    {% elseif list_type == 'DL' %}
+      <dl class="{{ final_classes }}">
+         {{ content|without('field_extra_classes', 'field_list_type') }}
+      </dl>
+    {% endif %}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
