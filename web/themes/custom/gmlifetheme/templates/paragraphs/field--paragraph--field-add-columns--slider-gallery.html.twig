@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default template for slider gallery collumn
+ */
+#}
+
+
+{% for item in items %}
+  {% set final_classes = paragraph.field_extra_classes.value|render|trim %}
+
+
+  {# Content for swipper #}
+  <div class="{{ final_classes }}">
+    <div class="container-general">
+        <div class="{{ final_classes }}">
+
+
+
+              {% set image_url = file_url(item.content['#media'].field_media_image.entity.uri.value) %}
+              {# {{ item.content }} #}
+              {# <img src="{{ image_url }}"  alt="background image" class="item-gallery img-cover"> #}
+
+              {# {{ content|without('field_autoplay_delay','field_transition_speed') }} #}
+
+              {{ item.content }}
+
+          
+
+        </div>
+    </div>
+  </div>
+{% endfor %}

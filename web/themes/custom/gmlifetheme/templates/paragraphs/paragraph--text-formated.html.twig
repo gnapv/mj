@@ -1,0 +1,20 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% set final_classes = paragraph.field_extra_classes.value|render|trim %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+        <div class="{{ final_classes }}">{{ content|without('field_extra_classes') }}</div>
+        {# {{ content.field_text_plain }} #}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

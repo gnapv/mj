@@ -1,0 +1,78 @@
+
+{# Associate lib JS and CSS to this template #}
+{{ attach_library('gmlifetheme/slider-swiper') }}
+
+{%
+  set classes = [
+     paragraph.field_extra_classes.value|render|trim,
+    'paragraph', 
+    'swiper-container type-swiper-gallery',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+
+{# Set vars to mount the slider #}
+
+
+
+{% set direction = paragraph.field_direction.value|render|trim %}
+{% set effect = paragraph.field_effect.value|render|trim %}
+{% set pagination = paragraph.field_pagination.value|render|trim %}
+{% set speed = paragraph.field_transition_speed.value|render|trim %}
+{# Add atributes to grab on JS #}
+
+{% set attributes = attributes.addClass(classes) %}
+
+{% if direction %}
+    {% set attributes = attributes.setAttribute('data-direction', direction) %}
+{% endif %}
+{% if effect %}
+    {% set attributes = attributes.setAttribute('data-effect', effect) %}
+{% endif %}
+{% if pagination %}
+    {% set attributes = attributes.setAttribute('data-pagination', pagination) %}
+{% endif %}
+{% if speed %}
+    {% set attributes = attributes.setAttribute('data-speed', speed) %}
+{% endif %}
+
+
+{# Resolver o problema do QUICKEDIT a mao.. - adicionar o atributo a mão - data-quickedit-entity-id #}
+{% set attributes = attributes.setAttribute('data-quickedit-entity-id', 'paragraphs_library_item/49') %}
+
+
+
+{% block paragraph %}
+ <!-- Slider main container -->
+  <div {{ attributes}} >
+    {% block content %}
+
+   
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+           {# Find the content column 2nd - level paragraph #}
+        {% set cols = content.field_add_columns %}
+        {# Loop on all Items and print classes and content #}
+
+        {% for key, item in cols['#items'] %}
+            <div class="swiper-slide">
+                <div class="container-general">
+                        {{ cols[key] }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <!-- If we need pagination -->
+    {% if pagination %}
+      <div class="swiper-pagination"></div>
+    {% endif %}
+
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

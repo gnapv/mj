@@ -1,0 +1,21 @@
+
+{% set row_classes = paragraph.field_row_extra_classes.value|render|trim %}
+
+
+{# Prints div with classes, and content without Width and Background. #}
+
+{% block paragraph %}
+    {% block content %}
+
+       {# Find the content column 2nd - level paragraph #}
+        {% set cols = content.field_add_columns %}
+        {# Loop on all Items and print classes and content #}
+         <div class="row {{ row_classes }}">
+          {% for key, item in cols['#items'] %}
+                  {{ cols[key] }}
+          {% endfor %}
+         </div>
+       
+    {% endblock %}
+
+{% endblock paragraph %}

@@ -1,0 +1,22 @@
+
+{% block paragraph %}
+    {% block content %}
+
+        {# Find the content column 2nd - level paragraph #}
+        {% set slides = content.field_background_image %}
+        {% for key, item in slides['#items'] %}
+           
+                        {# {{ slides[key] }} #}
+
+    {% set image_url = file_url(slides[key]['#media'].field_media_image.entity.uri.value) %}
+
+ <div class="slide-item" style="min-height: 60vh; background-image: url({{ image_url }})">
+
+
+    {# <img src="{{ image_url }}"  alt="background image" class="img-cover"> #}
+
+
+            </div>
+        {% endfor %} 
+    {% endblock %}
+{% endblock paragraph %}
