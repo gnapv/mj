@@ -18,6 +18,7 @@ regions:
 
 libraries:
   - radix/style
+  - gmlifetheme/base-library
   - gmlifetheme/style
 
 libraries-override:

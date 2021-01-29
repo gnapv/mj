@@ -7,7 +7,8 @@
       console.log('Init All - Slider - Swipper!');
 
       // Grab all elements SWIPER-SLIDER and init them
-      var elementsSS = document.querySelectorAll('.type-swiper-slider');
+      var elementsSS = document.querySelectorAll('.type-swiper-slider, .type-swiper-gallery');
+      // var elementsSS = document.querySelectorAll('.type-swiper-gallery');
 
       for (let i = 0; i < elementsSS.length; i++) {
         const element = elementsSS[i];

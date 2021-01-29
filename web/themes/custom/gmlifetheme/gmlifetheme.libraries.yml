@@ -8,6 +8,11 @@ style:
   dependencies:
     - core/jquery
     - core/drupal
+base-library:
+  js: 
+     assets/js/gsap.min.js: {}
+     assets/js/ScrollTrigger.min.js: {}
+     assets/js/initgsap.js: {}
 my-library:
   css:
       theme:
