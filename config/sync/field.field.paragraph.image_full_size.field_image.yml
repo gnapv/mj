@@ -1,0 +1,28 @@
+uuid: d376b0be-a5e1-4f24-bfe3-4991113666a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.image_full_size
+id: paragraph.image_full_size.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: image_full_size
+label: Image
+description: 'Full image size.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

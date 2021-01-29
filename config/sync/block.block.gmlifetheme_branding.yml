@@ -1,0 +1,25 @@
+uuid: 2a205787-9464-4324-b2aa-d319e65dced9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gmlifetheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: gmlifetheme_branding
+theme: gmlifetheme
+region: navbar_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

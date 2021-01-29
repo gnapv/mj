@@ -1,0 +1,18 @@
+uuid: bf9b3466-cd38-4799-abb0-72fbac7727a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_slides_per_group
+field_name: field_slides_per_group
+entity_type: paragraph
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

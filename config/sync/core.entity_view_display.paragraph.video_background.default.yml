@@ -1,0 +1,21 @@
+uuid: caf7779e-399b-4eec-9e8b-2a47d8ca3c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_background.field_link_to_video
+    - paragraphs.paragraphs_type.video_background
+id: paragraph.video_background.default
+targetEntityType: paragraph
+bundle: video_background
+mode: default
+content:
+  field_link_to_video:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

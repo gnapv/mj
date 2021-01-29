@@ -1,0 +1,33 @@
+uuid: e76a4fa8-481a-41d3-9dc5-211efbbd028d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_add_accordion_item
+    - field.field.paragraph.accordion.field_extra_classes
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_add_accordion_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_extra_classes:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

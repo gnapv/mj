@@ -1,0 +1,22 @@
+uuid: b3ea26bc-47c3-4e10-b3e8-f1370adcb6de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gomatheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gomatheme_content
+theme: gomatheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

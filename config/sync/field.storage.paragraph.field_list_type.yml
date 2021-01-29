@@ -1,0 +1,30 @@
+uuid: afe29227-349b-4174-8a5f-7bdf2df03036
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_list_type
+field_name: field_list_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: UL
+      label: ul
+    -
+      value: OL
+      label: ol
+    -
+      value: Dl
+      label: dl
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

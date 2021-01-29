@@ -1,0 +1,91 @@
+uuid: 3de156c9-b0ae-47e7-8e7f-5ff85a961125
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_columns
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.slider_gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.slider_gallery.field_add_columns
+field_name: field_add_columns
+entity_type: paragraph
+bundle: slider_gallery
+label: 'Add Columns'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      column: column
+    target_bundles_drag_drop:
+      accordion:
+        weight: 22
+        enabled: false
+      accordion_item:
+        weight: 23
+        enabled: false
+      button:
+        weight: 24
+        enabled: false
+      carousel:
+        weight: 25
+        enabled: false
+      column:
+        enabled: true
+        weight: 26
+      columns_deck:
+        weight: 27
+        enabled: false
+      cover_full_h:
+        weight: 28
+        enabled: false
+      from_library:
+        weight: 29
+        enabled: false
+      heading:
+        weight: 30
+        enabled: false
+      image:
+        weight: 31
+        enabled: false
+      image_full_size:
+        weight: 32
+        enabled: false
+      image_full_slider:
+        weight: 33
+        enabled: false
+      lists:
+        weight: 34
+        enabled: false
+      modal:
+        weight: 35
+        enabled: false
+      nested_columns_deck:
+        weight: 36
+        enabled: false
+      slider:
+        weight: 37
+        enabled: false
+      slider_gallery:
+        weight: 38
+        enabled: false
+      slider_parallax:
+        weight: 39
+        enabled: false
+      text_formated:
+        weight: 40
+        enabled: false
+      text_plain:
+        weight: 41
+        enabled: false
+      video_background:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

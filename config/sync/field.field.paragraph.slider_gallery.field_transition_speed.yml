@@ -1,0 +1,25 @@
+uuid: a33568ca-0727-476c-ae6a-007e2cf67b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_transition_speed
+    - paragraphs.paragraphs_type.slider_gallery
+id: paragraph.slider_gallery.field_transition_speed
+field_name: field_transition_speed
+entity_type: paragraph
+bundle: slider_gallery
+label: 'Transition speed'
+description: 'Add speed value. '
+required: false
+translatable: true
+default_value:
+  -
+    value: 500
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

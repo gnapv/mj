@@ -1,0 +1,23 @@
+uuid: 19ad91f6-5104-41c3-a3d4-37314ce180b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_space_between
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_space_between
+field_name: field_space_between
+entity_type: paragraph
+bundle: slider
+label: 'Space Between'
+description: 'Space Between Slides.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

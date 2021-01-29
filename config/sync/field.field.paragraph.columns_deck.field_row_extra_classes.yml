@@ -1,0 +1,19 @@
+uuid: 3f2a80bb-b033-4997-ab96-f9f26016611a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_extra_classes
+    - paragraphs.paragraphs_type.columns_deck
+id: paragraph.columns_deck.field_row_extra_classes
+field_name: field_row_extra_classes
+entity_type: paragraph
+bundle: columns_deck
+label: 'Row Extra classes'
+description: 'Add extra CSS classes to Row.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

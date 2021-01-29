@@ -1,0 +1,39 @@
+uuid: eac722b9-eb5a-432b-ab20-d1f8113dc55f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.swiper_full_1920_x_1020
+    - image.style.swiper_mobile_768_x_1024
+  theme:
+    - gomatheme
+id: swiper_slider
+label: 'Swiper Slider'
+image_style_mappings:
+  -
+    breakpoint_id: default.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: swiper_full_1920_x_1020
+  -
+    breakpoint_id: default.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: swiper_full_1920_x_1020
+  -
+    breakpoint_id: default.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: swiper_full_1920_x_1020
+  -
+    breakpoint_id: default.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: swiper_mobile_768_x_1024
+  -
+    breakpoint_id: default.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: swiper_mobile_768_x_1024
+breakpoint_group: gomatheme
+fallback_image_style: swiper_full_1920_x_1020

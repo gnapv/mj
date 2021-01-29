@@ -1,0 +1,25 @@
+uuid: 7c176bd0-8414-4ed2-ad25-bec02800ca13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_autoplay_delay
+    - paragraphs.paragraphs_type.carousel
+id: paragraph.carousel.field_autoplay_delay
+field_name: field_autoplay_delay
+entity_type: paragraph
+bundle: carousel
+label: 'Autoplay Delay'
+description: 'Add the delay to auto play, ex: 5000 = 5sec'
+required: false
+translatable: false
+default_value:
+  -
+    value: 5500
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

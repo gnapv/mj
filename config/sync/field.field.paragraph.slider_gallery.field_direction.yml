@@ -1,0 +1,23 @@
+uuid: 050ee980-8aa8-492d-86a2-9ae49e6c5723
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_direction
+    - paragraphs.paragraphs_type.slider_gallery
+  module:
+    - options
+id: paragraph.slider_gallery.field_direction
+field_name: field_direction
+entity_type: paragraph
+bundle: slider_gallery
+label: Direction
+description: 'Direction of the Slide Animation.'
+required: false
+translatable: true
+default_value:
+  -
+    value: horizontal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

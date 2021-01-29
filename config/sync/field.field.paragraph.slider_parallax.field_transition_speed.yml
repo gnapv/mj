@@ -1,0 +1,23 @@
+uuid: c999ce7e-2659-4831-bc43-6181ec137246
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_transition_speed
+    - paragraphs.paragraphs_type.slider_parallax
+id: paragraph.slider_parallax.field_transition_speed
+field_name: field_transition_speed
+entity_type: paragraph
+bundle: slider_parallax
+label: 'Transition speed'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

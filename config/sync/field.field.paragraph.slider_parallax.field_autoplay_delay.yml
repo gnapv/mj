@@ -1,0 +1,23 @@
+uuid: 76f15731-6f35-48af-b00e-489ecca77584
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_autoplay_delay
+    - paragraphs.paragraphs_type.slider_parallax
+id: paragraph.slider_parallax.field_autoplay_delay
+field_name: field_autoplay_delay
+entity_type: paragraph
+bundle: slider_parallax
+label: 'Autoplay Delay'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

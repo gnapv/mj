@@ -1,0 +1,19 @@
+uuid: badc7b99-0501-4263-8867-f019bdc4cf1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_gradient
+    - paragraphs.paragraphs_type.columns_deck
+id: paragraph.columns_deck.field_background_gradient
+field_name: field_background_gradient
+entity_type: paragraph
+bundle: columns_deck
+label: 'Background Gradient'
+description: "ex: linear-gradient(45deg, red, blue)\r\nlinear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73))     -       background-image: radial-gradient(919px at 1.7% 6.1%, rgba(221, 94, 137, 0.9) 0%, rgba(247, 187, 151, 0.8) 100.2%);"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

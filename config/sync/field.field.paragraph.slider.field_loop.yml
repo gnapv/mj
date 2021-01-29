@@ -1,0 +1,23 @@
+uuid: 386d2cad-f0af-439d-b76e-b4309f480843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_loop
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_loop
+field_name: field_loop
+entity_type: paragraph
+bundle: slider
+label: Loop
+description: 'Enable/Disable Slider Loop'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,73 @@
+uuid: 48c852ff-294d-4d16-b36f-eecaee62a90a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_columns
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.lists
+  module:
+    - entity_reference_revisions
+id: paragraph.lists.field_add_columns
+field_name: field_add_columns
+entity_type: paragraph
+bundle: lists
+label: 'Add Columns'
+description: 'Add Li content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      column: column
+    target_bundles_drag_drop:
+      button:
+        weight: 16
+        enabled: false
+      carousel:
+        weight: 17
+        enabled: false
+      column:
+        enabled: true
+        weight: 18
+      columns_deck:
+        weight: 19
+        enabled: false
+      cover_full_h:
+        weight: 20
+        enabled: false
+      from_library:
+        weight: 21
+        enabled: false
+      heading:
+        weight: 22
+        enabled: false
+      image:
+        weight: 23
+        enabled: false
+      image_full_slider:
+        weight: 24
+        enabled: false
+      lists:
+        weight: 25
+        enabled: false
+      slider:
+        weight: 26
+        enabled: false
+      slider_parallax:
+        weight: 27
+        enabled: false
+      text_formated:
+        weight: 28
+        enabled: false
+      text_plain:
+        weight: 29
+        enabled: false
+      video_background:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

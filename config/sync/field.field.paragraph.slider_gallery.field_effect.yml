@@ -1,0 +1,23 @@
+uuid: aa6a0d36-3fa4-4e9c-bb38-f96461f7eb10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_effect
+    - paragraphs.paragraphs_type.slider_gallery
+  module:
+    - options
+id: paragraph.slider_gallery.field_effect
+field_name: field_effect
+entity_type: paragraph
+bundle: slider_gallery
+label: Effect
+description: 'Slide Effect.'
+required: false
+translatable: true
+default_value:
+  -
+    value: slide
+default_value_callback: ''
+settings: {  }
+field_type: list_string

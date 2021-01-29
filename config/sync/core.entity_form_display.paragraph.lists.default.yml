@@ -1,0 +1,73 @@
+uuid: c0fe0afe-24b1-47d1-8404-8d478088f9f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lists.field_add_columns
+    - field.field.paragraph.lists.field_extra_classes
+    - field.field.paragraph.lists.field_extra_classes_item
+    - field.field.paragraph.lists.field_list_type
+    - paragraphs.paragraphs_type.lists
+  module:
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
+id: paragraph.lists.default
+targetEntityType: paragraph
+bundle: lists
+mode: default
+content:
+  field_add_columns:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: column
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        add_in_between: true
+        show_drag_and_drop: true
+        delete_confirmation: false
+        split_text: false
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: '2'
+          dialog_off_canvas: false
+    type: paragraphs
+    region: content
+  field_extra_classes:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_extra_classes_item:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_list_type:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

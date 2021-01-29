@@ -1,0 +1,51 @@
+uuid: 93784be9-cfd4-410c-ae76-f740b3b5c875
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_headings
+field_name: field_headings
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Heading 1'
+      label: 'Heading 1'
+    -
+      value: 'Heading 2'
+      label: 'Heading 2'
+    -
+      value: 'Heading 3'
+      label: 'Heading 3'
+    -
+      value: 'Heading 4'
+      label: 'Heading 4'
+    -
+      value: 'Heading 5'
+      label: 'Heading 5'
+    -
+      value: 'Heading 6'
+      label: 'Heading 6'
+    -
+      value: 'Display 1'
+      label: 'Display 1'
+    -
+      value: 'Display 2'
+      label: 'Display 2'
+    -
+      value: 'Display 3'
+      label: 'Display 3'
+    -
+      value: 'Display 4'
+      label: 'Display 4'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

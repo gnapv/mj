@@ -1,0 +1,21 @@
+uuid: 750ffd17-150c-45e7-bc3c-ebc240c75460
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_extra_classes
+field_name: field_extra_classes
+entity_type: paragraph
+type: string
+settings:
+  max_length: 1000
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

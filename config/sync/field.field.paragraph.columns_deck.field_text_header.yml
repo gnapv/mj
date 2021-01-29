@@ -1,0 +1,21 @@
+uuid: 2df0d5dd-f1b5-4f2f-8329-2dcd749731c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_header
+    - paragraphs.paragraphs_type.columns_deck
+  module:
+    - text
+id: paragraph.columns_deck.field_text_header
+field_name: field_text_header
+entity_type: paragraph
+bundle: columns_deck
+label: 'Text Header'
+description: 'Text for the header of the section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

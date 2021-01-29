@@ -1,0 +1,84 @@
+uuid: bfa58da7-602e-4e3b-acac-1bb0598bbf28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_content
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.columns_deck
+    - paragraphs.paragraphs_type.modal
+  module:
+    - entity_reference_revisions
+id: paragraph.modal.field_add_content
+field_name: field_add_content
+entity_type: paragraph
+bundle: modal
+label: 'Add Content'
+description: 'Add content to modal.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      column: column
+      columns_deck: columns_deck
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_item:
+        weight: 20
+        enabled: false
+      button:
+        weight: 21
+        enabled: false
+      carousel:
+        weight: 22
+        enabled: false
+      column:
+        enabled: true
+        weight: 23
+      columns_deck:
+        enabled: true
+        weight: 24
+      cover_full_h:
+        weight: 25
+        enabled: false
+      from_library:
+        weight: 26
+        enabled: false
+      heading:
+        weight: 27
+        enabled: false
+      image:
+        weight: 28
+        enabled: false
+      image_full_slider:
+        weight: 29
+        enabled: false
+      lists:
+        weight: 30
+        enabled: false
+      modal:
+        weight: 31
+        enabled: false
+      slider:
+        weight: 32
+        enabled: false
+      slider_parallax:
+        weight: 33
+        enabled: false
+      text_formated:
+        weight: 34
+        enabled: false
+      text_plain:
+        weight: 35
+        enabled: false
+      video_background:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

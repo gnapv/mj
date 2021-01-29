@@ -1,0 +1,10 @@
+uuid: 49b74b2e-6563-4d4c-80e7-a58f023788f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.swiper_slider
+label: 'Swiper Slider'
+targetEntityType: media
+cache: true

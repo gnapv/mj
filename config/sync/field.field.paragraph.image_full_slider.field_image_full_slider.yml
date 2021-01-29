@@ -1,0 +1,32 @@
+uuid: 4fed48f0-76b0-441a-b38d-d28244a9cc31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_full_slider
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.image_full_slider
+id: paragraph.image_full_slider.field_image_full_slider
+field_name: field_image_full_slider
+entity_type: paragraph
+bundle: image_full_slider
+label: 'Image Full Slider'
+description: 'Image for full Slider.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

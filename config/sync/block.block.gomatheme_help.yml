@@ -1,0 +1,22 @@
+uuid: 96a59c41-b9c9-403b-9f4d-bc5a668d6d44
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gomatheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gomatheme_help
+theme: gomatheme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

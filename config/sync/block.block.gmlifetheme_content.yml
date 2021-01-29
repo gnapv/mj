@@ -1,0 +1,22 @@
+uuid: 58216ac8-67a3-40fe-95af-6e3c87436818
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gmlifetheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gmlifetheme_content
+theme: gmlifetheme
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

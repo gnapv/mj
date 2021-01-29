@@ -1,0 +1,23 @@
+uuid: 17d2e2fa-5cae-4570-a09e-cc396142fb11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container
+    - paragraphs.paragraphs_type.columns_deck
+id: paragraph.columns_deck.field_container
+field_name: field_container
+entity_type: paragraph
+bundle: columns_deck
+label: Container
+description: 'Add Container to section.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

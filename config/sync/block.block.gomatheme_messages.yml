@@ -1,0 +1,22 @@
+uuid: d7bf7d1c-a211-4452-bf37-27d8765bee60
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - gomatheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: gomatheme_messages
+theme: gomatheme
+region: navbar_branding
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

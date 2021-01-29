@@ -1,0 +1,19 @@
+uuid: c3158c2d-0876-4490-821c-ae6d72576711
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_classes
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_extra_classes
+field_name: field_extra_classes
+entity_type: paragraph
+bundle: accordion
+label: 'Extra classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

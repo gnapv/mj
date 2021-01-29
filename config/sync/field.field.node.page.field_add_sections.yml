@@ -1,0 +1,89 @@
+uuid: 630bf027-3090-4e22-9b8f-f4214db09896
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_sections
+    - node.type.page
+    - paragraphs.paragraphs_type.columns_deck
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.lists
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.slider_parallax
+    - paragraphs.paragraphs_type.video_background
+  module:
+    - entity_reference_revisions
+id: node.page.field_add_sections
+field_name: field_add_sections
+entity_type: node
+bundle: page
+label: 'Add Sections'
+description: 'Add different sections to page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      columns_deck: columns_deck
+      from_library: from_library
+      slider: slider
+      slider_parallax: slider_parallax
+      video_background: video_background
+      lists: lists
+    target_bundles_drag_drop:
+      accordion:
+        weight: 18
+        enabled: false
+      accordion_item:
+        weight: 19
+        enabled: false
+      button:
+        weight: 10
+        enabled: false
+      carousel:
+        weight: 15
+        enabled: false
+      column:
+        weight: 8
+        enabled: false
+      columns_deck:
+        enabled: true
+        weight: 9
+      cover_full_h:
+        weight: 13
+        enabled: false
+      from_library:
+        enabled: true
+        weight: 10
+      heading:
+        weight: 11
+        enabled: false
+      image:
+        weight: 12
+        enabled: false
+      image_full_slider:
+        weight: 22
+        enabled: false
+      lists:
+        enabled: true
+        weight: 29
+      slider:
+        enabled: true
+        weight: 23
+      slider_parallax:
+        enabled: true
+        weight: 25
+      text_formated:
+        weight: 13
+        enabled: false
+      text_plain:
+        weight: 14
+        enabled: false
+      video_background:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions

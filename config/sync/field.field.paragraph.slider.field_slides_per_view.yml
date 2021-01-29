@@ -1,0 +1,25 @@
+uuid: 6f1ef280-40b4-4f43-b768-42f45d37a878
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides_per_view
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_slides_per_view
+field_name: field_slides_per_view
+entity_type: paragraph
+bundle: slider
+label: 'Slides Per View'
+description: 'Slides Per View.'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

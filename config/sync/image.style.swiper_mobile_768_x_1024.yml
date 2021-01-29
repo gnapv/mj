@@ -1,0 +1,15 @@
+uuid: 598eadc2-98e3-44cf-ba00-b5812fa9cca4
+langcode: en
+status: true
+dependencies: {  }
+name: swiper_mobile_768_x_1024
+label: 'swiper mobile 768 x 1024'
+effects:
+  52a12780-b03b-4060-8f71-ba326ec7e166:
+    uuid: 52a12780-b03b-4060-8f71-ba326ec7e166
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 1024
+      anchor: center-center

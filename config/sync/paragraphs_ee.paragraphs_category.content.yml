@@ -1,0 +1,8 @@
+uuid: e3251f51-63aa-415c-b277-11509ddd746d
+langcode: en
+status: true
+dependencies: {  }
+id: content
+label: Content
+description: 'Contents for structure'
+weight: -10

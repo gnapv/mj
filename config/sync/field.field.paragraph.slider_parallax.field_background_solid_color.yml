@@ -1,0 +1,19 @@
+uuid: 3f63436a-8a6d-46d6-bd79-6dda8cf937b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_solid_color
+    - paragraphs.paragraphs_type.slider_parallax
+id: paragraph.slider_parallax.field_background_solid_color
+field_name: field_background_solid_color
+entity_type: paragraph
+bundle: slider_parallax
+label: 'Background Solid Color'
+description: 'ex: #000'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

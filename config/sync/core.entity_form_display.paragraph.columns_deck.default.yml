@@ -1,0 +1,120 @@
+uuid: b7b6d245-3d71-4b55-84cc-7c8f3f9a188a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns_deck.field_add_columns
+    - field.field.paragraph.columns_deck.field_background_blend_mode
+    - field.field.paragraph.columns_deck.field_background_gradient
+    - field.field.paragraph.columns_deck.field_background_image
+    - field.field.paragraph.columns_deck.field_background_solid_color
+    - field.field.paragraph.columns_deck.field_container
+    - field.field.paragraph.columns_deck.field_extra_classes
+    - field.field.paragraph.columns_deck.field_row_extra_classes
+    - field.field.paragraph.columns_deck.field_text_header
+    - paragraphs.paragraphs_type.columns_deck
+  module:
+    - media_library
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
+    - text
+id: paragraph.columns_deck.default
+targetEntityType: paragraph
+bundle: columns_deck
+mode: default
+content:
+  field_add_columns:
+    type: paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: column
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        show_drag_and_drop: true
+        split_text: false
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: '2'
+          dialog_off_canvas: false
+    region: content
+  field_background_blend_mode:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_background_gradient:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_background_image:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_background_solid_color:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_container:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_extra_classes:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_row_extra_classes:
+    weight: 7
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_header:
+    weight: 6
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

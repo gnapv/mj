@@ -1,0 +1,19 @@
+uuid: cceba6ab-4620-4cd4-afae-a801f2c86334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_classes
+    - paragraphs.paragraphs_type.text_formated
+id: paragraph.text_formated.field_extra_classes
+field_name: field_extra_classes
+entity_type: paragraph
+bundle: text_formated
+label: 'Extra classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

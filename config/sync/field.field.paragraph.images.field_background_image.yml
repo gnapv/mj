@@ -1,0 +1,32 @@
+uuid: 3c77be2e-bfc2-4910-9033-b39495aa768d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_image
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.images
+id: paragraph.images.field_background_image
+field_name: field_background_image
+entity_type: paragraph
+bundle: images
+label: 'Background Image'
+description: 'Add multiple Images.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

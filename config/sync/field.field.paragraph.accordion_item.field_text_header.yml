@@ -1,0 +1,21 @@
+uuid: 5a00b902-a3b8-4a23-bc4e-63c354b4f120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_header
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - text
+id: paragraph.accordion_item.field_text_header
+field_name: field_text_header
+entity_type: paragraph
+bundle: accordion_item
+label: 'Text Header'
+description: 'Add text title to Accordion Item.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,132 @@
+uuid: cea81862-edd5-4104-9502-57695f9f3c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_content
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.columns_deck
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_full_size
+    - paragraphs.paragraphs_type.image_full_slider
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.lists
+    - paragraphs.paragraphs_type.modal
+    - paragraphs.paragraphs_type.nested_columns_deck
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.slider_gallery
+    - paragraphs.paragraphs_type.slider_parallax
+    - paragraphs.paragraphs_type.text_formated
+    - paragraphs.paragraphs_type.text_plain
+    - paragraphs.paragraphs_type.video_background
+  module:
+    - entity_reference_revisions
+id: paragraph.column.field_add_content
+field_name: field_add_content
+entity_type: paragraph
+bundle: column
+label: 'Add Content'
+description: 'Add all king off content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      columns_deck: columns_deck
+      from_library: from_library
+      image: image
+      heading: heading
+      text_formated: text_formated
+      text_plain: text_plain
+      button: button
+      carousel: carousel
+      accordion: accordion
+      accordion_item: accordion_item
+      video_background: video_background
+      image_full_slider: image_full_slider
+      slider: slider
+      lists: lists
+      slider_parallax: slider_parallax
+      image_full_size: image_full_size
+      modal: modal
+      images: images
+      nested_columns_deck: nested_columns_deck
+      slider_gallery: slider_gallery
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 18
+      accordion_item:
+        enabled: true
+        weight: 19
+      button:
+        enabled: true
+        weight: 9
+      carousel:
+        enabled: true
+        weight: 13
+      column:
+        weight: -15
+        enabled: false
+      columns_deck:
+        enabled: true
+        weight: -14
+      cover_full_h:
+        weight: 13
+        enabled: false
+      from_library:
+        enabled: true
+        weight: -13
+      heading:
+        enabled: true
+        weight: -11
+      image:
+        enabled: true
+        weight: -12
+      image_full_size:
+        enabled: true
+        weight: 30
+      image_full_slider:
+        enabled: true
+        weight: 22
+      images:
+        enabled: true
+        weight: 33
+      lists:
+        enabled: true
+        weight: 25
+      modal:
+        enabled: true
+        weight: 33
+      nested_columns_deck:
+        enabled: true
+        weight: 35
+      slider:
+        enabled: true
+        weight: 23
+      slider_gallery:
+        enabled: true
+        weight: 40
+      slider_parallax:
+        enabled: true
+        weight: 27
+      text_formated:
+        enabled: true
+        weight: -10
+      text_plain:
+        enabled: true
+        weight: -9
+      video_background:
+        enabled: true
+        weight: 20
+field_type: entity_reference_revisions

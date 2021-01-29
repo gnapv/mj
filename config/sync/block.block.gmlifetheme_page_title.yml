@@ -1,0 +1,20 @@
+uuid: f6c3934b-5a26-4224-bf9e-f3a782df6304
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gmlifetheme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: gmlifetheme_page_title
+theme: gmlifetheme
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

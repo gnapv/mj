@@ -1,0 +1,19 @@
+uuid: ce90d3df-88d8-4b52-8a80-d940cf14a94e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_classes
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_extra_classes
+field_name: field_extra_classes
+entity_type: paragraph
+bundle: slider
+label: 'Extra classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

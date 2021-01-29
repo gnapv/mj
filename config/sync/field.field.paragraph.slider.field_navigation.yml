@@ -1,0 +1,23 @@
+uuid: 6961d581-5b9f-49a9-90d3-84ff4fd52eb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_navigation
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_navigation
+field_name: field_navigation
+entity_type: paragraph
+bundle: slider
+label: Navigation
+description: 'Add Navigation arrows.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

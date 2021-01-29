@@ -1,0 +1,21 @@
+uuid: a86b2b78-34b8-4833-88f7-039655773856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_formated
+    - paragraphs.paragraphs_type.text_formated
+  module:
+    - text
+id: paragraph.text_formated.field_text_formated
+field_name: field_text_formated
+entity_type: paragraph
+bundle: text_formated
+label: 'Text formated'
+description: 'Add formatted text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: db389488-58fe-48e2-978d-0cb58ba398e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_image_full_slider
+field_name: field_image_full_slider
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

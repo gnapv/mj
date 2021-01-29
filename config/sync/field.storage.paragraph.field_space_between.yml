@@ -1,0 +1,18 @@
+uuid: 344cb6a4-c312-45fd-9fa1-d394095cc8c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_space_between
+field_name: field_space_between
+entity_type: paragraph
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

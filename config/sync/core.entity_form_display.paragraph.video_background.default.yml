@@ -1,0 +1,23 @@
+uuid: 0ee5caac-82d9-422e-87ed-0d1208dc000d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_background.field_link_to_video
+    - paragraphs.paragraphs_type.video_background
+id: paragraph.video_background.default
+targetEntityType: paragraph
+bundle: video_background
+mode: default
+content:
+  field_link_to_video:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

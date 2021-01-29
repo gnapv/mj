@@ -1,0 +1,31 @@
+uuid: 210733b5-31e1-451c-8d74-92a72c82bb72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_full_slider.field_extra_classes
+    - field.field.paragraph.image_full_slider.field_image_full_slider
+    - paragraphs.paragraphs_type.image_full_slider
+id: paragraph.image_full_slider.default
+targetEntityType: paragraph
+bundle: image_full_slider
+mode: default
+content:
+  field_extra_classes:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_full_slider:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: swiper_slider
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

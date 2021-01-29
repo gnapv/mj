@@ -1,0 +1,78 @@
+uuid: 0f46b201-bd65-4618-a300-e1308b75914c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+            - DrupalFontAwesome
+            - Table
+            - HorizontalRule
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+            - FontSize
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+        -
+          name: 'Text Align'
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "h1|h1\r\nh2|h2\r\nh3|h3\r\nh1.display-1|display-1\r\nh1.display-2|display-2\r\nh1.display-3|display-3\r\nh1.display-4|display-4\r\np.text-uppercase|uppercase\r\np.text-lowercase|lowercase\r\np.lead|lead\r\n"
+    font:
+      font_names: ''
+      font_sizes: "0.625rem|10px Rem\r\n0.75rem|12px Rem\r\n0.875rem|14px Rem\r\n1.125rem|18px Rem\r\n1.25rem|20px Rem\r\n1.5rem|24px Rem\r\n1.875rem|30px Rem\r\n2rem|32px Rem"
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

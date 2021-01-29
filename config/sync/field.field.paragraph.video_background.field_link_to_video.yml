@@ -1,0 +1,21 @@
+uuid: 446e1bff-7b5b-43d0-b6ee-e844f0cc04a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_to_video
+    - paragraphs.paragraphs_type.video_background
+id: paragraph.video_background.field_link_to_video
+field_name: field_link_to_video
+entity_type: paragraph
+bundle: video_background
+label: 'Link to video'
+description: 'Full URL to video mp4.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1280_10MG.mp4'
+default_value_callback: ''
+settings: {  }
+field_type: string

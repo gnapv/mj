@@ -1,0 +1,22 @@
+uuid: 0457ce3e-d87d-45fd-a069-0c984c80702f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gmlifetheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gmlifetheme_help
+theme: gmlifetheme
+region: header
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

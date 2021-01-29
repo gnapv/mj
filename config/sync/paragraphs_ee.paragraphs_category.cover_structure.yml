@@ -1,0 +1,8 @@
+uuid: bafce42d-86bd-41db-8772-3420453caa59
+langcode: en
+status: true
+dependencies: {  }
+id: cover_structure
+label: 'Cover - Structure'
+description: 'Cover sections.'
+weight: -10

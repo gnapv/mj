@@ -1,0 +1,24 @@
+uuid: cd292da2-de4f-4628-b316-5f0853432fab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.heading
+  module:
+    - text
+id: paragraph.heading.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: heading
+label: 'Heading title'
+description: 'Add Titles to content. h1, h2, h3, Display-1, Display-2 ...'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Title here'
+    format: restricted_html
+default_value_callback: ''
+settings: {  }
+field_type: text

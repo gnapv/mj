@@ -1,0 +1,23 @@
+uuid: fe985dcd-a6ed-49f9-a890-d47febff26ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pagination
+    - paragraphs.paragraphs_type.slider_gallery
+id: paragraph.slider_gallery.field_pagination
+field_name: field_pagination
+entity_type: paragraph
+bundle: slider_gallery
+label: Pagination
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

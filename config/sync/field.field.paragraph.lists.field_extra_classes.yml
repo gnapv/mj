@@ -1,0 +1,19 @@
+uuid: c29b9613-1d1b-4eff-86c5-2605218291c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_classes
+    - paragraphs.paragraphs_type.lists
+id: paragraph.lists.field_extra_classes
+field_name: field_extra_classes
+entity_type: paragraph
+bundle: lists
+label: 'Extra classes'
+description: 'Add classes, ex: nav mx-md-auto d-flex flex-column flex-sm-row justify-content-center align-items-center'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

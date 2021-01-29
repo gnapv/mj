@@ -1,0 +1,8 @@
+uuid: 408d3787-1227-494a-b5bc-d958110bd71c
+langcode: en
+status: true
+dependencies: {  }
+id: structure
+label: Structure
+description: 'Combinations of many structures.'
+weight: -10

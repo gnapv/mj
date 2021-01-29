@@ -1,0 +1,24 @@
+uuid: 8c3ff2dd-2ad0-45b7-8c5b-dd4f580fa31f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_formated
+    - paragraphs.paragraphs_type.modal
+  module:
+    - text
+id: paragraph.modal.field_text_formated
+field_name: field_text_formated
+entity_type: paragraph
+bundle: modal
+label: 'Modal btn Text'
+description: 'Add Modal btn Text.'
+required: true
+translatable: true
+default_value:
+  -
+    value: "<p>Hit me!</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

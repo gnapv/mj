@@ -1,0 +1,23 @@
+uuid: 4d9426af-2bc0-496e-aaef-2e9e5c4b8812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides_per_group
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_slides_per_group
+field_name: field_slides_per_group
+entity_type: paragraph
+bundle: slider
+label: 'Slides Per Group'
+description: 'Slides per Group.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

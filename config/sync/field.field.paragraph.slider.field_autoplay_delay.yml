@@ -1,0 +1,25 @@
+uuid: 408433ab-1efe-4758-bccd-248e9f6c7cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_autoplay_delay
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_autoplay_delay
+field_name: field_autoplay_delay
+entity_type: paragraph
+bundle: slider
+label: 'Autoplay Delay'
+description: 'Add the delay value.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 6000
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,15 @@
+uuid: f402c30d-5486-451e-a6e1-2717d116f627
+langcode: en
+status: true
+dependencies: {  }
+name: swiper_full_1920_x_1020
+label: 'swiper full 1920 x 1020'
+effects:
+  600a9a94-a68d-4b61-a053-95a59bc757c4:
+    uuid: 600a9a94-a68d-4b61-a053-95a59bc757c4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1020
+      anchor: center-center

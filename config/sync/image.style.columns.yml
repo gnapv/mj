@@ -1,0 +1,15 @@
+uuid: e25e0e03-bce6-4708-b832-6d205e5a19a2
+langcode: en
+status: true
+dependencies: {  }
+name: columns
+label: Columns
+effects:
+  17e201f0-9254-41eb-91e8-863196877d5d:
+    uuid: 17e201f0-9254-41eb-91e8-863196877d5d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 480
+      anchor: center-center

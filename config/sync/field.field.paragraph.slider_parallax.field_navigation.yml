@@ -1,0 +1,23 @@
+uuid: 2ce026fc-1188-431a-97a8-20015fc932d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_navigation
+    - paragraphs.paragraphs_type.slider_parallax
+id: paragraph.slider_parallax.field_navigation
+field_name: field_navigation
+entity_type: paragraph
+bundle: slider_parallax
+label: Navigation
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

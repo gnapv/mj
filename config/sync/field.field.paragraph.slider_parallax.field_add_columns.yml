@@ -1,0 +1,70 @@
+uuid: 984e6084-c6ef-4c64-98cd-ec6227473e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_columns
+    - paragraphs.paragraphs_type.column
+    - paragraphs.paragraphs_type.slider_parallax
+  module:
+    - entity_reference_revisions
+id: paragraph.slider_parallax.field_add_columns
+field_name: field_add_columns
+entity_type: paragraph
+bundle: slider_parallax
+label: 'Add Columns'
+description: 'Add Slides content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      column: column
+    target_bundles_drag_drop:
+      button:
+        weight: 15
+        enabled: false
+      carousel:
+        weight: 16
+        enabled: false
+      column:
+        enabled: true
+        weight: 17
+      columns_deck:
+        weight: 18
+        enabled: false
+      cover_full_h:
+        weight: 19
+        enabled: false
+      from_library:
+        weight: 20
+        enabled: false
+      heading:
+        weight: 21
+        enabled: false
+      image:
+        weight: 22
+        enabled: false
+      image_full_slider:
+        weight: 23
+        enabled: false
+      slider:
+        weight: 24
+        enabled: false
+      slider_parallax:
+        weight: 25
+        enabled: false
+      text_formated:
+        weight: 26
+        enabled: false
+      text_plain:
+        weight: 27
+        enabled: false
+      video_background:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

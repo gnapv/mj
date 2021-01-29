@@ -1,0 +1,23 @@
+uuid: 134f67d7-e49d-4513-8f53-5563f80d7d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_type
+    - paragraphs.paragraphs_type.lists
+  module:
+    - options
+id: paragraph.lists.field_list_type
+field_name: field_list_type
+entity_type: paragraph
+bundle: lists
+label: 'List type'
+description: 'Choose type of the List.'
+required: false
+translatable: false
+default_value:
+  -
+    value: UL
+default_value_callback: ''
+settings: {  }
+field_type: list_string

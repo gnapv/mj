@@ -1,0 +1,25 @@
+uuid: 0b6da903-4b3b-4a90-88ea-1aeae86da206
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_transition_speed
+    - paragraphs.paragraphs_type.carousel
+id: paragraph.carousel.field_transition_speed
+field_name: field_transition_speed
+entity_type: paragraph
+bundle: carousel
+label: 'Transition speed'
+description: 'Add the transition speed, ex:1000 = 1sec'
+required: false
+translatable: false
+default_value:
+  -
+    value: 2000
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

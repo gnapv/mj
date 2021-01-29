@@ -1,0 +1,22 @@
+uuid: 2ea594a1-96a3-4d5f-a518-bbcce63e78a7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - gmlifetheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: gmlifetheme_messages
+theme: gmlifetheme
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

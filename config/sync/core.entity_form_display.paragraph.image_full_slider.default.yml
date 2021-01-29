@@ -1,0 +1,33 @@
+uuid: bc845964-cb86-47a0-b754-cd4804b19a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_full_slider.field_extra_classes
+    - field.field.paragraph.image_full_slider.field_image_full_slider
+    - paragraphs.paragraphs_type.image_full_slider
+  module:
+    - media_library
+id: paragraph.image_full_slider.default
+targetEntityType: paragraph
+bundle: image_full_slider
+mode: default
+content:
+  field_extra_classes:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_full_slider:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

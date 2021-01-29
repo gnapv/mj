@@ -1,0 +1,79 @@
+uuid: ad3af7fb-af51-4812-aff7-65b09d80de60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_accordion_item
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_add_accordion_item
+field_name: field_add_accordion_item
+entity_type: paragraph
+bundle: accordion
+label: 'Add Accordion Item'
+description: 'Add content to Accordion.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion_item: accordion_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 18
+        enabled: false
+      accordion_item:
+        enabled: true
+        weight: 19
+      button:
+        weight: 20
+        enabled: false
+      carousel:
+        weight: 21
+        enabled: false
+      column:
+        weight: 22
+        enabled: false
+      columns_deck:
+        weight: 23
+        enabled: false
+      cover_full_h:
+        weight: 24
+        enabled: false
+      from_library:
+        weight: 25
+        enabled: false
+      heading:
+        weight: 26
+        enabled: false
+      image:
+        weight: 27
+        enabled: false
+      image_full_slider:
+        weight: 28
+        enabled: false
+      lists:
+        weight: 29
+        enabled: false
+      slider:
+        weight: 30
+        enabled: false
+      slider_parallax:
+        weight: 31
+        enabled: false
+      text_formated:
+        weight: 32
+        enabled: false
+      text_plain:
+        weight: 33
+        enabled: false
+      video_background:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

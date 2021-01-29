@@ -1,0 +1,99 @@
+uuid: e5242351-86c2-4cf1-b40d-0a7bd571f296
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns_deck.field_add_columns
+    - field.field.paragraph.columns_deck.field_background_blend_mode
+    - field.field.paragraph.columns_deck.field_background_gradient
+    - field.field.paragraph.columns_deck.field_background_image
+    - field.field.paragraph.columns_deck.field_background_solid_color
+    - field.field.paragraph.columns_deck.field_container
+    - field.field.paragraph.columns_deck.field_extra_classes
+    - field.field.paragraph.columns_deck.field_row_extra_classes
+    - field.field.paragraph.columns_deck.field_text_header
+    - paragraphs.paragraphs_type.columns_deck
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.columns_deck.default
+targetEntityType: paragraph
+bundle: columns_deck
+mode: default
+content:
+  field_add_columns:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_background_blend_mode:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_background_gradient:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_background_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_background_solid_color:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_container:
+    weight: 4
+    label: hidden
+    settings:
+      format: custom
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_extra_classes:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_row_extra_classes:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_header:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

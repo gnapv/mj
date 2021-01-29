@@ -1,0 +1,20 @@
+uuid: 4e30e579-937f-433a-ba47-ab0d5c926d71
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gomatheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gomatheme_local_actions
+theme: gomatheme
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

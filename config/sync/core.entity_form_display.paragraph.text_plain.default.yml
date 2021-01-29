@@ -1,0 +1,32 @@
+uuid: d233a426-7700-4468-bb4e-9370956ae950
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_plain.field_extra_classes
+    - field.field.paragraph.text_plain.field_text_plain
+    - paragraphs.paragraphs_type.text_plain
+id: paragraph.text_plain.default
+targetEntityType: paragraph
+bundle: text_plain
+mode: default
+content:
+  field_extra_classes:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_plain:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

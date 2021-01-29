@@ -1,0 +1,31 @@
+uuid: 25861324-90ad-439d-867e-55ad6110632c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_background_image
+    - field.field.paragraph.images.field_extra_classes
+    - paragraphs.paragraphs_type.images
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_background_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: full_size
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_extra_classes:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

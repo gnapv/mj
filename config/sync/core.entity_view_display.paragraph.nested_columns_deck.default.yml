@@ -1,0 +1,33 @@
+uuid: 2cb8f4d0-62dd-42ae-83cb-8937164f16a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nested_columns_deck.field_add_columns
+    - field.field.paragraph.nested_columns_deck.field_row_extra_classes
+    - paragraphs.paragraphs_type.nested_columns_deck
+  module:
+    - entity_reference_revisions
+id: paragraph.nested_columns_deck.default
+targetEntityType: paragraph
+bundle: nested_columns_deck
+mode: default
+content:
+  field_add_columns:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_row_extra_classes:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
