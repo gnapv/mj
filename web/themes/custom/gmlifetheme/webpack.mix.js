@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  | Alterar a proxy para o caminho onde se localiza o site
  */
-const proxy = 'http://localhost/gomamaschine/web/';
+const proxy = 'http://local.mariajoaoalves.com/';
 const mix = require('laravel-mix');
 
 /*

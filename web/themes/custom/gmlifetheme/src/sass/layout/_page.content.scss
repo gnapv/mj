@@ -1,5 +1,310 @@
 // Page: Content
+// HomePage     ----------------------------------------------------------------
 // -----------------------------------------------------------------------------
+
+
+
+
 .page__content {
 
+}
+
+.forma-trabalhar {
+    img{
+        width: 35%;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+    .forma-trabalhar {
+        img{
+            width:55%;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+
+    .forma-trabalhar {
+        img{
+            width:65%;
+        }
+    }
+}
+
+
+.destaque-clinica {
+    p{
+        font-size: calc(0.775rem + .6vw);
+    }
+}
+
+.marcacoesbt a{
+ text-decoration: none;
+}
+
+
+.destaque-pacientes {
+
+    hr {
+        max-width: 200px;
+        border-top: 5px solid #fff;
+    }
+    span  a {
+        color: white;
+        &:hover {
+            color: $secondary;
+        }
+
+    }
+
+    a {
+        color: $primary;
+        &:hover {
+            color: $secondary;
+        }
+
+    }
+}
+
+
+// Page: Content
+// Clinica      ----------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.fundo-verde-meia-col-r {
+    position: absolute;
+    width: 1000px;
+    height: 270px;
+    background: #00A19B;
+    top: 26%;
+    left: 0;
+    z-index: -1;
+    border-top-left-radius: 12% 50px;
+    color: white;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image:
+        radial-gradient(circle at 10px -5px, transparent 12px,#fff 13px);
+      }
+}
+
+.fundo-verde-meia-col {
+    position: absolute;
+    width: 1000px;
+    height: 423px;
+    background: $primary;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+    border-top-right-radius: 12% 50px;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image:
+        radial-gradient(circle at 10px -5px, transparent 12px,#fff 13px);
+      }
+}
+
+.espelho-img {
+    bottom: -93px;
+    padding: 0 4rem;
+}
+
+
+.slider-instalacao {
+    .swiper-pagination {
+        bottom: 40px !important;
+    }
+    .swiper-pagination-bullet {
+        transition:all .3s ease-out;
+    }
+    .swiper-pagination-bullet-active {
+        width: 30px !important;
+        border-radius: 10px;
+    }
+}
+
+// Page: Content
+// Areas      ----------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+
+.accordion{
+    .collapsible-link {
+        cursor: pointer;
+        
+        &:hover p{
+            transform: translateX(5px);
+        }
+
+        color: $dark !important;
+        p {
+            transition: all .175s ease-out;
+            padding-right: 35px;
+        }
+
+    }
+  
+    .collapsible-link.collapsed {
+        color: $primary !important;
+    }
+}
+
+// Page: Content
+// marcação de consultas      ----------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.fundo-verde-meia-col-2 {
+    position: absolute;
+    width: 1000px;
+    height: 104%;
+    background: #04a19b;
+    right: -70px;
+    z-index: -1;
+    top: -30px;
+    border-top-right-radius: 12% 50px;
+
+}
+
+.fundo-verde-meia-col-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
+}
+
+#webform-submission-marcar-consulta-paragraph-1472-add-form {
+    label {
+        color: $primary;
+    }
+    .form-check-label {
+        font-size: .9rem;
+    }
+
+}
+
+::placeholder {
+            color: #ccc !important;
+            opacity: 1; /* Firefox */
+}
+
+.slider-politica .swiper-container{
+    position: fixed !important;
+
+}
+
+
+// Page: Content
+// politica de privacidade      ----------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.sec-politica {
+    padding-bottom: 4rem;
+    margin-bottom: 15rem;
+}
+.slider-politica {
+    .txt-politica {
+        line-height: 24px;
+    }
+}
+
+
+// Page: Content
+// Media queries      ----------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+
+
+@include media-breakpoint-up(534px) {
+    .fundo-verde-meia-col-r {
+        height: 400px;
+    }
+    .fundo-verde-meia-col {
+        top: 23%;
+    }
+    .espelho-img {
+        bottom: -30px;
+
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .fundo-verde-meia-col-r {
+        height: 423px;
+    }
+    .fundo-verde-meia-col {
+        height: 423px;
+        top: 22%;
+    }
+    .espelho-img {
+        bottom: -40px;
+
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .fundo-verde-meia-col-r {
+        height: 423px;
+    }
+    .fundo-verde-meia-col {
+        height: 440px;
+        top: 22%;
+    }
+    .espelho-img {
+        bottom: -55px;
+    }
+    .img-dr-maria {
+        transform: scale(1.2) translate(0px, 60px);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .fundo-verde-meia-col {
+        height: 445px;
+        top: 22%;
+    }
+    .espelho-img {
+        bottom: -80px;
+    }
+    .img-dr-maria {
+        transform: none;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .fundo-verde-meia-col {
+        height: 530px; 
+    }
+    .espelho-img {
+        bottom: -90px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .fundo-verde-meia-col {
+        top: 25%;
+        height: 550px;   
+    }
+    .espelho-img {
+        bottom: -110px;
+    }
 }

@@ -1,0 +1,26 @@
+
+/**
+ * @Drupal backoffice CSS 
+ * 
+*/
+
+
+.block--gmlifetheme-local-tasks {
+    position: fixed;
+    left: 5px;
+    transform-origin: left;
+    transform: rotate(-90deg) translate(-230px, -5px) scale(.85);
+    z-index: 100000;
+    transition: all .3s ease-in;
+
+    &:hover{
+        left: 30px;
+    }
+
+    .nav-tabs {
+        .nav-item:last-child{
+            display: none;
+        }
+
+    }
+}

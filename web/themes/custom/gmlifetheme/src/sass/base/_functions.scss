@@ -4,7 +4,32 @@
 //   background: red;
 // }
 
-//non-essential styles imported from another pen
+
+
+/**
+ * Responsive Column Counts with Bootstrap 4
+ * <div class="column-count-md-3">
+ *   <p>Very long Lorem ipsum...</p>
+ * </div>
+ */
+
+ @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @for $i from 2 through $grid-columns {
+            .column-count#{$infix}-#{$i} {
+                column-count: $i;
+                // orphans: 2;
+                // widows: 3;
+                column-gap: 40px;
+            }
+        }
+
+    }
+}
+
+
 
 @mixin aspect-ratio($width, $height) {
     position: relative;
@@ -53,6 +78,18 @@
     padding-top: 100%;
 }
 
+
+//  rem SCSS function
+//  usage:
+//  font-size: rem(18); // or rem(18px)
+
+$html-font-size: 16px;
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
 
 
 .clip-circle {

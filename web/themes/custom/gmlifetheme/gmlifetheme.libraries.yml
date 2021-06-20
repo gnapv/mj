@@ -13,6 +13,8 @@ base-library:
      assets/js/gsap.min.js: {}
      assets/js/ScrollTrigger.min.js: {}
      assets/js/initgsap.js: {}
+  dependencies:
+    - core/jquery.once
 my-library:
   css:
       theme:

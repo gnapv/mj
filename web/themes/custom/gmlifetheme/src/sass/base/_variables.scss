@@ -34,7 +34,7 @@ $grays: map-merge(
     $grays
 );
 
-$blue:    #f7bb97 !default;
+$blue:    #00A19B !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #dd5e89 !default;
@@ -66,14 +66,14 @@ $colors: map-merge(
     $colors
 );
 
-$primary:       $pink !default;
-$secondary:     $gray-600 !default;
+$primary:       $blue !default;
+$secondary:     #013937 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         #7accc6 !default;
+$dark:          #013937 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -142,7 +142,9 @@ $spacers: map-merge(
       5: ($spacer * 3),
       6: ($spacer * 4),
       7: ($spacer * 5),
-      8: ($spacer * 6)
+      8: ($spacer * 6),
+      9: ($spacer * 7),
+      10: ($spacer * 8)
     ),
     $spacers
 );
@@ -198,7 +200,8 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1400px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -213,7 +216,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1140px,
+  xxl: 1320px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -1126,3 +1130,4 @@ $positions: static, relative, absolute, fixed, sticky !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+

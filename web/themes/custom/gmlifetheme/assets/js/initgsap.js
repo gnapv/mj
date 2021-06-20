@@ -3,7 +3,7 @@
     attach: function (context, settings) {
       $(document, context).once('initgsap').each( function() {
       // funtion to run only one time
-      console.log('Init GSAP scroll Animation!');
+      //console.log('Init GSAP scroll Animation!');
 
       //init all scroll animations
 
@@ -242,7 +242,7 @@ seccionElements.forEach((section, i) => {
  
 
         const finalPropsCols = extractProps(finalCols);
-        console.log("finalPropsCols : ",finalPropsCols);
+       // console.log("finalPropsCols : ",finalPropsCols);
         // grab props from classes to apply animation
         let objInItems = {};
         let objOutitems = {};

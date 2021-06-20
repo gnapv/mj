@@ -4,7 +4,7 @@
     attach: function (context, settings) {
       $(document, context).once('initSliderSwiper').each( function() {
       // funtion to run only one time
-      console.log('Init All - Slider - Swipper!');
+      //console.log('Init All - Slider - Swipper!');
 
       // Grab all elements SWIPER-SLIDER and init them
       var elementsSS = document.querySelectorAll('.type-swiper-slider, .type-swiper-gallery');

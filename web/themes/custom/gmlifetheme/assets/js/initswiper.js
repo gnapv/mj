@@ -3,7 +3,7 @@
     attach: function (context, settings) {
       $(document, context).once('initSwiper').each( function() {
       // funtion to run only one time
-      console.log('Init All - Caroucel - Background - Swipper!');
+      //console.log('Init All - Caroucel - Background - Swipper!');
 
             // Grab all elements SWIPER-SLIDER and init them
             var elementsSS = document.querySelectorAll('.type-swiper-background');

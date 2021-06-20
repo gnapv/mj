@@ -1,5 +1,267 @@
 // Page: Header
 // -----------------------------------------------------------------------------
-.page__header {
+.navbar {
+
+    min-height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgb(0 0 0 / 30%);
+    border-bottom-right-radius: 12% 15px;
+    border-bottom-left-radius: 12% 15px;
+
+    .navbar-brand img {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link   {
+        font-weight: 500;
+        font-size: rem(18); // or rem(18px)
+        color: $primary;
+        margin-right: 15px;
+        transition: all .175s ease-out;
+        border-top: 2px solid transparent;
+    }
+    .nav-link:hover, .nav-link.is-active  {
+        color: $dark !important;
+        border-top: 2px solid $primary;
+        transform: translate(0,2px);
+        transition-delay: 0s;
+    }
+
+    .js-form-item input {
+        display: none;
+    } 
+
+    .navbar-toggler {
+        position: absolute;
+        right: 60px;
+        top: 10px;
+    }
+}
+
+
+.hamburger {
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity,filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+}
+.hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+.hamburger-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+}
+.hamburger-inner:before {
+    top: -10px;
+}
+.hamburger-inner:after {
+    bottom: -10px;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: $primary;
 
 }
+.hamburger-inner:after, .hamburger-inner:before {
+    display: block;
+    content: "";
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transform: rotate(225deg);
+}
+
+.hamburger--spin.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out,opacity .1s ease-out .12s;
+    opacity: 0;
+}
+.hamburger--spin.is-active .hamburger-inner:after {
+    bottom: 0;
+    transition: bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+    transform: rotate(-90deg);
+}
+
+.hamburger--spin .hamburger-inner:before {
+    transition: top .1s ease-in .25s,opacity .1s ease-in;
+}
+
+
+
+.main-content {
+    position: relative;
+    top: -14px;
+}
+
+// A clinica
+.paragraph--id--1164 {
+    border-top-right-radius: 12% 50px;
+    border-top-left-radius: 12% 50px;
+    position: relative;
+    bottom: 47px;
+    background-color: $white;
+}
+
+
+
+
+
+    .marcacoesbt {
+        position: relative;
+        display: inline-block;
+        font-size: rem(19);
+        color: $light;
+        background: white;
+        border-radius: 30px;
+        text-align: left;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            padding: 15px;
+        }
+        
+        .menina-call-icon{
+            position: absolute;
+            background: url('/themes/custom/gmlifetheme/img/svg/menina_call.svg');
+            width: 37px;
+            height: 38px;
+            top: 9px;
+            left: 23px;
+            
+
+        }
+
+        strong {
+            display: block;
+            padding-left: 60px;
+            padding-right: 20px;
+        }
+    }
+
+
+    @media screen and (max-width: 645px) {  
+       .hero-home .marcacoesbt  .menina-call-icon {
+            top: 24% !important;
+
+        }
+    }
+    @media screen and (max-width: 625px) {  
+      .hero-home .marcacoesbt   .menina-call-icon {
+            top: 32% !important;
+        }
+    }
+     @media screen and (min-width: 768px) and (max-width: 992px) {  
+       .hero-home .marcacoesbt  .menina-call-icon {
+            top: 24% !important;
+        }
+    }
+
+
+
+    .destaque-pacientes .marcacoesbt {
+        position: relative;
+        display: inline-block;
+        font-size: rem(19);
+        color: $light;
+        background: white;
+        border-radius: 30px;
+        text-align: left;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            padding: 15px;
+        }
+        
+        .menina-call-icon{
+            position: absolute;
+            background: url('/themes/custom/gmlifetheme/img/svg/menina_call.svg');
+            width: 37px;
+            height: 38px;
+            top: 9px;
+            left: 23px;
+            
+
+        }
+
+        strong {
+            display: block;
+            padding-left: 60px;
+            padding-right: 20px;
+        }
+    }
+
+
+    @media screen and (max-width: 390px) {  
+       .destaque-pacientes .marcacoesbt  .menina-call-icon {
+            top: 24% !important;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        .navbar {
+            min-height: 100px;
+        }
+        .navbar-toggler {
+         display: none;
+        }
+    }
+
+
+
+
+    @include media-breakpoint-down(md) {
+        .navbar-nav {
+            align-items: flex-start;
+            padding: 30px 0;
+        }
+        .marcacoesnav {
+            padding-bottom: 60px;
+        }
+        .menina-call-icon {
+
+        }
+
+    }
+
+@media screen and (max-width: 600px) {  
+        .navbar-toggler {
+         right: 30px!important;
+        }
+}
+
+@media screen and (max-width: 440px) {  
+    .block--gmlifetheme-branding {
+        width: 75%;
+    }
+}
+
+
+
+

@@ -1,0 +1,44 @@
+
+
+
+
+
+ 
+  // obj com nome, prop e valor a dar para as novas classes a criar
+
+$bordersmj: (
+    border-radius-t-r: (
+    border-top-right-radius:12% 50px
+  ),
+  border-radius-t-l: (
+
+    border-top-left-radius:12% 50px
+  ),
+  border-radius-b-r: (
+    border-bottom-right-radius:12% 50px
+  ),
+  border-radius-b-l: (
+
+    border-bottom-left-radius:12% 50px
+  )
+);
+
+// Mixin para criar as classes baseadas no Array - Nome da classe - prop e valor
+@mixin mjborder-modifiers($attribute: 'border-radius', $prefix: '-') {
+    // loop dentro do array para ir buscar o nome
+    @each $name, $valor in $bordersmj {
+      &#{$prefix}#{$name} {
+        //loop dentro do valor para ir buscar as props
+         @each $name, $prop in $valor {
+            #{$name}: #{$prop};
+        }
+      }
+    }
+}
+
+// Utilizar a mixin - criar as classes a começar por .mj + prefix + nome[array]
+// resultado classes com os nomes:  .mj-border-radius-t-r .mj-border-radius-t-l etc.. 
+.mj {
+    @include mjborder-modifiers;
+}
+

@@ -9,8 +9,6 @@
   {% embed '@radix/navbar/navbar.twig' with {
     placement: 'sticky-top',
     container: 'fixed',
-    color: 'light',
-    utility_classes: ['bg-light'],
   } %}
 
     {% block branding %}
@@ -30,16 +28,21 @@
     {% block right %}
       {% if page.navbar_right %}
         {{ page.navbar_right }}
+        <div class="marcacoesnav">
+        <a href="/marcacao-de-consulta" title="Marque a sua consulta!" >
+         <img class="" src="/themes/custom/gmlifetheme/img/svg/call_to_us.svg" alt="Marcações online">
+        </a>
+        </div>
       {% endif %}
     {% endblock %}
   {% endembed %}
 
-  <main class="pt-5 pb-5">
+  <main class="main-content">
     {% if page.header %}
-      <header class="page__header mb-3">
-        <div class="container">
+      <header class="page__header">
+
           {{ page.header }}
-        </div>
+
       </header>
     {% endif %}
 
