@@ -5,6 +5,10 @@ import 'bootstrap';
   Drupal.behaviors.myModuleBehavior = {
     attach: function (context, settings) {
 
+      $('input.myCustomBehavior', context).once('myCustomBehavior').each(function () {
+        // Apply the myCustomBehaviour effect to the elements only once.
+     
+
 
 
    	console.log(" ");
@@ -72,15 +76,15 @@ import 'bootstrap';
 
 	}
 
-	$(document).ready(function(){
+	//$(document).ready(function(){
 		confirmaURL();
 		confirmaLANG();
 		removeLoading();
-	});
+	//});
 
 
 
-
+ 	}); //end once
  
     }
   };
