@@ -22,19 +22,26 @@
         "drupal/admin_toolbar": "^2.4",
         "drupal/ckeditor_font": "^1.1",
         "drupal/console": "^1.0.2",
+        "drupal/cookies": "1.2.1",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/devel": "^2.1",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/facebook_pixel": "^2.0@RC",
         "drupal/fontawesome": "^2.17",
+        "drupal/google_analytics": "^4.0",
+        "drupal/google_tag": "^1.6",
         "drupal/link_css": "1.x-dev",
         "drupal/metatag": "^1.16",
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_ee": "^1.7",
         "drupal/radix": "^4.10",
+        "drupal/simple_sitemap": "^3.11",
+        "drupal/structured_data": "^1.2",
         "drupal/svg_image": "^1.14",
         "drupal/twig_tweak": "^2.9",
         "drupal/webform": "^6.0",
+        "drush/drush": "10.3.6",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -75,6 +82,9 @@
         "patches": {
             "drupal/core": {
                 "Quick Edit could not associate the rendered entity field markup": "https://www.drupal.org/files/issues/2020-10-16/3072231-37-core-8-9-x.patch"
+            },
+            "drupal/entity_usage": {
+                "private method in entity_usage_form_alter": "https://www.drupal.org/files/issues/2022-01-24/use-is_callable-method-3260251-2.patch"
             }
         },
         "composer-exit-on-patch-failure": true,
